@@ -1,0 +1,7 @@
+# Tested direct dependencies. torch is provided by your CPU/CUDA environment.
+chromadb==1.5.9
+sentence-transformers==6.2.0
+numpy==2.2.6
+python-dotenv==1.2.4
+requests==2.34.2
+pypdf==6.10.0

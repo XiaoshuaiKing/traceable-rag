@@ -1,0 +1,32 @@
+# ---------- 环境与密钥 ----------
+.env
+*.env
+!.env.example
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.cache/
+.test_deps/
+.pytest_cache/
+
+# ---------- 私有语料与派生数据（不随仓库分发） ----------
+# 原始资料由使用者自备，放入 data/docs/
+# 本项目凭据语料含个人文档，故整目录不入库
+data/docs/
+# 冻结评测快照：逐块文本即原始语料内容
+data/chunks.json
+# 向量库与活动索引清单，可由语料重建
+data/index/
+# 评测题集的证据字段与逐题结果含语料原文片段
+eval/datasets/
+eval/results/
+
+# ---------- 模型权重（约 96MB，用 download_embedding.py 获取） ----------
+models/
+
+# ---------- 本地备份 ----------
+*.bak
+*.tmp
